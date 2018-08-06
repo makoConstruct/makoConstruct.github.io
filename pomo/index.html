@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>flow</title>
+    <link rel="shortcut icon" href="http://pomo.dreamshrine.org/assets/minimalfavicon.png">
+    <link href="assets/css.css" rel="stylesheet">
+    <link href="assets/mainpage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="assets/mainpage.js"></script>
+</head>
+
+<body>
+    <audio id="focusSound" class="defsOnly" src="assets/reinsamba_gong.mp3" preload="auto"></audio>
+    <audio id="breakSound" class="defsOnly" src="assets/buddhist_bell.mp3" preload="auto"></audio>
+    <div id="clockArea">
+        <div id="clockLine">
+            <div id="clockFace">
+                <canvas id="clockCanvas" width="70" height="70"></canvas>
+            </div>
+            <div id="clockText"></div>
+        </div>
+        <div id="statusLine" class="rowHeading">We are <span id="currentStatus">focusing on the task</span></div>
+    </div>
+    <div id="configurationArea">
+        <div id="settingsBtn" class="collapsingHeading"><span class="bulletPointThing"></span>settings</div>
+        <div id="settingsInfo" class="infoLine settingContent scaleContainer">
+            <div class="scaleContained">
+                <div class="settingItemPair">
+                    <span>working</span>
+                    <input id="intervalOnTime">
+                </div>
+                <div class="settingItemPair"><span>resting</span>
+                    <input id="intervalOffTime">
+                </div>
+                <button id="sendIntervalsBtn">►set</button>
+                <button id="resetBtn">reset</button>
+                <div class="settingItemPair">
+                    <button id="themeBtn">theme</button><span id="currentTheme">dark</span></div>
+                <div class="settingItemPair">
+                    <button id="soundBtn">sound</button><span id="currentSound">on</span></div>
+                <div class="settingItemPair">
+                    <button id="notificationsBtn">notifications</button><span id="currentNotifications">off</span></div>
+            </div>
+        </div>
+        <div id="shareBtn" class="collapsingHeading"><span class="bulletPointThing"></span>share</div>
+        <div id="shareInfo" class="infoLine settingContent scaleContainer">
+            <div class="scaleContained">
+                <input id="shareLinkDisplay" readonly="true" class="linkDisplay">
+            </div>
+        </div>
+        <div id="aboutBtn" class="collapsingHeading"><span class="bulletPointThing"></span>about</div>
+        <div id="aboutInfo" class="settingContent scaleContainer">
+            <div class="scaleContained">
+                <p>This is a pomodoro timer</p>
+                <p>During the work period, commit to avoiding or deferring all distractions and focus completely on the task.</p>
+                <p>During the rest period, step back, reflect, plan, and unwind. Handle some of the things that might have distracted you before.</p>
+                <p>If you work from home, sharing a timer with friends may be helpful. When everyone in the group is working, you will feel like working too. When the group rests at the same time, you will have people to talk to during your break.</p>
+                <p>More info about the pomodoro method can be found <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">here</a></p>
+                <p>Flow is a gift from merveilles (thank <a href="https://makoConstruct.github.io/">mako</a> for coding everything, <a href="https://changbai.li/">changbai</a> for the url storage innovation)</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
